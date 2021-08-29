@@ -138,16 +138,6 @@ Trie::TrieNode* Trie::pForEndOfWrd(string pre) //return pointer to the end of th
 	{
 		if (p->children[charToInt(pre[i])] != 0)
 		{
-			//if (i == pre.length()-1) //the end of the prefix
-			//{
-			//	for (int i = 0; i < ALPHABET; i++)
-			//	{
-			//		if (pre[pre.length()] == intToCh(i))
-			//		{
-			//			return p->children[i];
-			//		}
-			//	}
-			//}
 			p = p->children[charToInt(pre[i])];
 		}
 	}
